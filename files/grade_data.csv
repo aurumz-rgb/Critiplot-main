@@ -1,7 +1,0 @@
-Outcome,Risk_of_Bias,Inconsistency,Indirectness,Imprecision,Publication_Bias,Overall_Certainty
-Mortality,Serious,Not Serious,Not Serious,Serious,Not Serious,Low
-Infection,Serious,Very Serious,Not Serious,Not Serious,Not Serious,High
-Hospitalization,Not Serious,Not Serious,Serious,Not Serious,Moderate
-Adverse Events,Serious,Serious,Not Serious,Serious,Not Serious,Low
-Quality of Life,Not Serious,Not Serious,Very Serious,Serious,Not Reported,Very Low
-

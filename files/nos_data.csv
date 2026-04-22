@@ -1,7 +1,0 @@
-"Author, Year",Representativeness,Non-exposed Selection,Exposure Ascertainment,Outcome Absent at Start,Comparability (Age/Gender),Comparability (Other),Outcome Assessment,Follow-up Length,Follow-up Adequacy,Total Score,Overall RoB
-"Study 1, 2019",1,1,1,1,1,0,1,1,1,8,Low
-"Study 2, 2024",1,1,1,1,1,0,1,1,0,7,Moderate
-"Study 3, 2019",1,0,1,1,0,1,1,0,1,6,Moderate
-"Study 4, 2025",1,0,1,0,0,1,0,0,1,4,High
-"Study 5, 2025",1,0,0,0,0,1,1,0,0,3,High
-"Study 6, 2019",1,1,1,1,1,0,1,1,1,8,Low
