@@ -85,3 +85,4 @@ def test_app_loads():
     at = AppTest.from_file(APP_FILE)
     at.run()
     assert not at.exception
+    
