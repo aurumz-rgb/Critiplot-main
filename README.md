@@ -4,6 +4,7 @@
 [![Streamlit Demo](https://img.shields.io/badge/Streamlit-Demo-orange)](https://critiplot.streamlit.app)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17236600.svg)](https://doi.org/10.5281/zenodo.17236600)
+[![Tests](https://github.com/aurumz-rgb/Critiplot-main/actions/workflows/test.yml/badge.svg)](https://github.com/aurumz-rgb/Critiplot-main/actions)
 
 **Critiplot** is an open-source Python tool and **interactive web app** for **visualizing risk-of-bias (RoB) assessments** across multiple evidence synthesis tools:
 
