@@ -4,14 +4,15 @@ import io
 
 APP_FILE = "app.py"
 
-class DummyFile:
-    """Helper class to mock Streamlit's UploadedFile."""
+
+class DummyFile(io.BytesIO):
     def __init__(self, content, name):
-        self.content = content
+  
+        super().__init__(content)
         self.name = name
+
+        self.type = "text/csv" if name.endswith('.csv') else "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         self.size = len(content)
-    def getvalue(self): return self.content
-    def read(self): return self.content
 
 
 test_data = [
@@ -45,29 +46,38 @@ test_data = [
 def test_tool_processing(tool_name, csv_content_str):
     """Test file upload and processing for all assessment tools."""
     
-
+    
     at = AppTest.from_file(APP_FILE)
     at.run()
     assert not at.exception, "App failed on initial load"
 
-    
+
     at.selectbox[0].select(tool_name).run()
     assert not at.exception, f"App crashed selecting tool: {tool_name}"
 
 
     csv_content = csv_content_str.encode('utf-8')
     uploader_key = f"file_uploader_{tool_name}"
+    
+
     dummy_file = DummyFile(csv_content, "test.csv")
 
-  
+
     at.session_state[uploader_key] = dummy_file
     
 
-    at.run()
+    at.run(timeout=30)
 
 
     assert not at.exception, f"App crashed processing file for: {tool_name}"
-    assert at.success, f"Success message not found for: {tool_name}"
+    
+    # Debugging: If success is missing, check if an error was displayed
+    if not at.success:
+        if at.error:
+            pytest.fail(f"Tool '{tool_name}' failed with error: {at.error[0].value}")
+        else:
+            pytest.fail(f"Success message not found for: {tool_name} (No error message displayed)")
+
     assert "Plot generated successfully!" in at.success[0].value
 
 def test_app_loads():
