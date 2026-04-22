@@ -1,0 +1,30 @@
+Author_Year,Study_Category,Appropriate randomization,Groups comparable at baseline,Complete outcome data,Outcome assessors blinded,Adherence to intervention,Overall_Rating
+"Smith, 2019",Qualitative,Yes,Yes,Yes,Yes,Yes,High
+"Johnson, 2024",Qualitative,Yes,No,Yes,"Can't tell",Yes,Moderate
+"Garcia, 2020",Qualitative,Yes,Yes,"Can't tell",Yes,Yes,Moderate
+"Patel, 2021",Qualitative,No,Yes,Yes,No,Yes,Low
+"Lopez, 2022",Qualitative,Yes,Yes,Yes,No,Yes,Moderate
+
+"Williams, 2019",Randomized,Yes,Yes,Yes,No,Yes,Moderate
+"Brown, 2025",Randomized,Yes,Yes,No,"Can't tell",Yes,Low
+"Clark, 2020",Randomized,Yes,Yes,Yes,Yes,Yes,High
+"Nguyen, 2021",Randomized,No,Yes,Yes,No,"Can't tell",Low
+"Singh, 2022",Randomized,Yes,"Can't tell",Yes,"Can't tell",Yes,Moderate
+
+"Davis, 2019",Non-randomized,Yes,Yes,Yes,No,Yes,Moderate
+"Miller, 2025",Non-randomized,No,Yes,"Can't tell",Yes,Yes,Low
+"Turner, 2020",Non-randomized,Yes,Yes,Yes,"Can't tell","Can't tell",Moderate
+"Brooks, 2021",Non-randomized,No,Yes,No,No,Yes,Low
+"Reed, 2022",Non-randomized,Yes,"Can't tell",Yes,Yes,Yes,Moderate
+
+"Wilson, 2019",Descriptive,Yes,Yes,Yes,Yes,Yes,High
+"Moore, 2025",Descriptive,Yes,No,Yes,"Can't tell",Yes,Moderate
+"Green, 2020",Descriptive,Yes,Yes,"Can't tell",Yes,Yes,Moderate
+"Hughes, 2021",Descriptive,No,Yes,Yes,No,"Can't tell",Low
+"Bailey, 2022",Descriptive,Yes,"Can't tell",Yes,Yes,Yes,Moderate
+
+"Taylor, 2019",Mixed Methods,Yes,Yes,Yes,Yes,Yes,High
+"Anderson, 2025",Mixed Methods,Yes,No,Yes,"Can't tell",Yes,Moderate
+"Roberts, 2020",Mixed Methods,Yes,Yes,"Can't tell",Yes,Yes,Moderate
+"Murphy, 2021",Mixed Methods,"Can't tell",Yes,Yes,"Can't tell",Yes,Moderate
+"Peterson, 2022",Mixed Methods,No,Yes,Yes,No,"Can't tell",Low

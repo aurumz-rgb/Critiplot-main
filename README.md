@@ -195,7 +195,7 @@ If you use **Critiplot** in your work, please cite:
 
 **APA:**
 
-> Sahu, V. (2025). *Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0)*. (https://doi.org/10.5281/zenodo.17236600)
+> Sahu, V. (2025). *Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1)*. (https://doi.org/10.5281/zenodo.17236600)
 
 **Other formats:**
 

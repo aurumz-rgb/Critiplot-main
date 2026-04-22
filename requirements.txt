@@ -5,4 +5,7 @@ seaborn==0.13.2
 streamlit==1.55.0
 pyarrow==21.0.0
 openpyxl==3.1.5
-critiplot==2.1.0
+critiplot==2.1.1
+pytest
+pytest-mock
+
