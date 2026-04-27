@@ -48,7 +48,7 @@ def test_tool_processing(tool_name, csv_content_str):
     """Test file upload and processing for all assessment tools."""
     
     at = AppTest.from_file(APP_FILE)
-    at.run()
+    at.run(timeout=30) 
     assert not at.exception, "App failed on initial load"
 
     at.selectbox[0].select(tool_name).run()
