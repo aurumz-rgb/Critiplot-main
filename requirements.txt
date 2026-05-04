@@ -2,7 +2,7 @@ numpy==2.2.2
 pandas==2.3.2
 matplotlib==3.10.9
 seaborn==0.13.2
-streamlit==1.55.0
+streamlit==1.57.0
 pyarrow==21.0.0
 openpyxl==3.1.5
 critiplot==2.1.1
