@@ -212,7 +212,9 @@ Harvard, MLA, Chicago, IEEE, Vancouver (see full web for options).
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg" alt="Apache 2.0 License" height="120">
 </a>
 
-Apache 2.0 © 2025 Vihaan Sahu
+Apache 2.0 
+
+© 2025 Vihaan Sahu
 
 ---
 
