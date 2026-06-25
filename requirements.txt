@@ -1,6 +1,6 @@
 numpy==2.2.2
 pandas==2.3.2
-matplotlib==3.10.9
+matplotlib==3.11.0
 seaborn==0.13.2
 streamlit==1.55.0
 pyarrow==23.0.1
