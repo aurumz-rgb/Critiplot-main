@@ -729,7 +729,7 @@ st.markdown("""
     </div>
     <div class="footer-center">
         <span>Critiplot</span>
-        <span>Professional Risk of Bias Visualization Tool</span>
+        <span>Professional RoB & Certainty of Evidence Visualization Tool</span>
         <a href='https://github.com/aurumz-rgb/Critiplot-main' target='_blank' class='footer-link'>GitHub Repository</a>
     </div>
 </div>
