@@ -123,7 +123,7 @@ st.markdown('<div class="top-padding-container">', unsafe_allow_html=True)
 display_logo_png_top_touch("./assets/logo.png", height=180)
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 st.markdown('<h1 class="centered-title">Critiplot.</h1>', unsafe_allow_html=True)
-st.markdown('<p class="centered-subtitle">A Critical Appraisal Plot Visualiser for Risk of Bias Assessments</p>', unsafe_allow_html=True)
+st.markdown('<p class="centered-subtitle">A Critical Appraisal Plot Visualiser for Risk of Bias & Certainty of Evidence</p>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="lowered-section">', unsafe_allow_html=True)
 

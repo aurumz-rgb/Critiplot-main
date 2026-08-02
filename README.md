@@ -6,7 +6,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17236600.svg)](https://doi.org/10.5281/zenodo.17236600)
 [![Tests](https://github.com/aurumz-rgb/Critiplot-main/actions/workflows/test.yml/badge.svg)](https://github.com/aurumz-rgb/Critiplot-main/actions)
 
-**Critiplot** is an open-source Python tool and **interactive web app** for **visualizing risk-of-bias (RoB) assessments** across multiple evidence synthesis tools:
+**Critiplot** is an open-source Python tool and **interactive web app** for **visualizing risk-of-bias (RoB) & certainty of evidence assessments** across multiple evidence synthesis tools:
 
 * **Newcastle-Ottawa Scale (NOS)**
 * **JBI Critical Appraisal Checklists** (Case Report / Case Series)
@@ -15,6 +15,10 @@
 * **Mixed Methods Appraisal Tool (MMAT)**
 
 It produces **publication-ready traffic-light plots** and **stacked bar charts**, allowing researchers to summarize study quality clearly in systematic reviews and meta-analyses.
+
+* **Risk of Bias and Certainty of Evidence assessment:** Follows the original scoring/checklists of each tool.
+* **Reproducibility:** Code and sample datasets archived via **Zenodo DOI**.
+* **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias**.
 
 ---
 
@@ -47,25 +51,42 @@ Streamlit User-Inferface
 * Open-source, fully reproducible, usable via **Python scripts** or **Streamlit web app**.
 * Adjustable **themes, figure sizes, line thickness, and legends**.
 
----
-
-
-## Data & Template
 
 * Please strictly follow the **Data & Template** _(available as .csv & excel format)_ as mentioned in the main Critiplot Web: [critiplot.vercel.app](https://critiplot.vercel.app)
 
 ---
 
 
-## 📥 Installation
+## 🔹 How Scores Are Converted
+
+### NOS
+
+* **Selection domain (0–4 stars):** 3–4 → Low, 2 → Moderate, 0–1 → High
+* **Comparability domain (0–2 stars):** 2 → Low, 1 → Moderate, 0 → High
+* **Outcome/Exposure domain (0–3 stars):** 3 → Low, 2 → Moderate, 0–1 → High
+
+### JBI
+
+* Each domain is binary: `1 = low risk`, `0 = high risk` (case reports & series).
+
+### GRADE
+
+* High / Moderate / Low / Very Low certainty mapped to traffic-light colors.
+
+### ROBIS
+
+* Domains evaluated as Low / High / Unclear risk and visualized similarly.
+
+---
+
+
+## 📥 Installation [For those, who wanna host Offline]
 
 ```bash
 git clone https://github.com/aurumz-rgb/Critiplot-main.git
 cd Critiplot
 pip install -r requirements.txt
 ```
-
-> Tested with **Python 3.11+**, **Matplotlib**, **Seaborn**, and **Pandas**.
 
 ---
 
@@ -155,38 +176,6 @@ streamlit run app.py
 * Download plots in **PNG, PDF, SVG, or EPS formats** directly.
 
 > The web provides **example CSV/XLSX templates** for each tool to guide formatting.
-
----
-
-## 📖 Methods Notes
-
-* **RoB assessment:** Follows the original scoring/checklists of each tool.
-* **Visualisation:** Traffic-light and weighted bar plots generated with **Matplotlib / Seaborn**.
-* **Transparency:** Raw scores should be included in supplementary tables.
-* **Reproducibility:** Code and sample datasets archived via **Zenodo DOI**.
-* **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias**.
-
----
-
-## 🔹 How Scores Are Converted to Risk-of-Bias (RoB)
-
-### NOS
-
-* **Selection domain (0–4 stars):** 3–4 → Low, 2 → Moderate, 0–1 → High
-* **Comparability domain (0–2 stars):** 2 → Low, 1 → Moderate, 0 → High
-* **Outcome/Exposure domain (0–3 stars):** 3 → Low, 2 → Moderate, 0–1 → High
-
-### JBI
-
-* Each domain is binary: `1 = low risk`, `0 = high risk` (case reports & series).
-
-### GRADE
-
-* High / Moderate / Low / Very Low certainty mapped to traffic-light colors.
-
-### ROBIS
-
-* Domains evaluated as Low / High / Unclear risk and visualized similarly.
 
 ---
 
