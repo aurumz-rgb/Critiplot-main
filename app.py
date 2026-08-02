@@ -724,7 +724,7 @@ st.markdown("""
 
 <div class="footer-container">
     <div class="footer-left">
-        <div>© 2025 Vihaan Sahu</div>
+        <div>© 2025-26 Vihaan Sahu</div>
         <div>Licensed under the Apache License, Version 2.0</div>
     </div>
     <div class="footer-center">
