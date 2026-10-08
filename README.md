@@ -23,7 +23,7 @@ It produces **publication-ready traffic-light plots** and **stacked bar charts**
 ---
 
 
-🔗 **Interactive web app:** [critiplot.vercel.app](https://critiplot.vercel.app)
+🔗 **Interactive web app:** [critiplot.github.io](https://critiplot.github.io)
 
 - If you want to skip the Vercel user-interface, you can directly access Streamlit: [critiplot.streamlit.app](https://critiplot.streamlit.app)
 
@@ -52,7 +52,7 @@ Streamlit User-Inferface
 * Adjustable **themes, figure sizes, line thickness, and legends**.
 
 
-* Please strictly follow the **Data & Template** _(available as .csv & excel format)_ as mentioned in the main Critiplot Web: [critiplot.vercel.app](https://critiplot.vercel.app)
+* Please strictly follow the **Data & Template** _(available as .csv & excel format)_ as mentioned in the main Critiplot Web: [https://critiplot.github.io](https://critiplot.github.io)
 
 ---
 
