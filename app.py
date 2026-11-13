@@ -14,7 +14,7 @@ import glob
 import critiplot
 
 st.set_page_config(
-    page_title="Critiplot",
+    page_title="Critiplot: Risk of Bias & Certainty of Evidence",
     layout="wide",
     page_icon="./assets/icon.png"  
 )
@@ -581,7 +581,7 @@ if uploaded_file is not None:
         st.markdown("""
 **Please ensure your data meets these requirements:**
 
-* **First, always verify you've selected the correct Risk of Bias (RoB) assessment tool** that matches your data format. The tool you select must correspond to the type of RoB assessment you're uploading.
+* **First, always verify you've selected the correct assessment framework** that matches your data format. The framework you select must correspond to the type of risk-of-bias or certainty-of-evidence assessment you're uploading.
 
 * Your file must strictly follow the template structure shown above.
 
@@ -662,7 +662,7 @@ elif citation_style == "IEEE":
 elif citation_style == "Vancouver":
     citation_text = vancouver_citation
 
-st.markdown(f'<p style="margin:0; color:#ffff; font-size:1.1rem;"><i>If you use Critiplot to create risk-of-bias plots for your study, please remember to cite the tool.</i></p>', unsafe_allow_html=True)
+st.markdown(f'<p style="margin:0; color:#ffff; font-size:1.1rem;"><i>If you use Critiplot to create risk-of-bias or certainty-of-evidence plots for your study, please remember to cite the tool.</i></p>', unsafe_allow_html=True)
 st.markdown(f'<div class="citation-box"><p style="margin:0; color: #000;">{citation_text}</p></div>', unsafe_allow_html=True)
 
 copy_button_html = f"""

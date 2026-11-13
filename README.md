@@ -18,7 +18,7 @@ It produces **publication-ready traffic-light plots** and **stacked bar charts**
 
 * **Risk of Bias and Certainty of Evidence assessment:** Follows the original scoring/checklists of each tool.
 * **Reproducibility:** Code and sample datasets archived via **Zenodo DOI**.
-* **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias**.
+* **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias or certainty-of-evidence judgements**.
 
 ---
 
@@ -45,9 +45,9 @@ Streamlit User-Inferface
 
 ## ✨ Key Features
 
-* Converts risk-of-bias ratings into **traffic-light plots**.
+* Converts risk-of-bias and certainty-of-evidence ratings into **traffic-light plots**.
 * Generates **publication-quality figures** in multiple formats: `.png`, `.pdf`, `.svg`, `.eps`.
-* Supports **NOS, JBI (Case Report / Case Series), GRADE, ROBIS and MMAT**.
+* Supports risk-of-bias frameworks (**NOS, JBI Case Report, JBI Case Series, ROBIS, and MMAT**) and **GRADE for certainty of evidence**.
 * Open-source, fully reproducible, usable via **Python scripts** or **Streamlit web app**.
 * Adjustable **themes, figure sizes, line thickness, and legends**.
 
@@ -171,7 +171,7 @@ streamlit run app.py
 ```
 
 * Upload your CSV/XLSX file to visualize **traffic-light plots**.
-* Select the **risk-of-bias tool**: NOS, JBI, GRADE, or ROBIS.
+* Select the **assessment framework**: NOS, JBI, GRADE, ROBIS, or MMAT.
 * Choose your **plot theme** for a publication-ready figure.
 * Download plots in **PNG, PDF, SVG, or EPS formats** directly.
 
