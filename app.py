@@ -718,8 +718,8 @@ st.markdown("""
 }
 .footer-left { text-align:left; }
 .footer-center { display:flex; flex-wrap:wrap; gap:20px 40px; justify-content:center; align-items:center; }
-.footer-link { color:#2E86C1; text-decoration:none; transition:color 0.3s ease; }
-.footer-link:hover { color:#3498db; }
+.footer-container .footer-link { color:#2E86C1; text-decoration:none; transition:color 0.3s ease; }
+.footer-container .footer-link:hover { color:#3498db; text-decoration:underline; }
 </style>
 
 <div class="footer-container">
