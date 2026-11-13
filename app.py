@@ -717,9 +717,9 @@ st.markdown("""
     font-size: 1.05rem;
 }
 .footer-left { text-align:left; }
-.footer-center { display:flex; gap:40px; justify-content:center; align-items:center; }
-.footer-link { color:#3498db; text-decoration:none; transition:color 0.3s ease; }
-.footer-link:hover { color:#5682B1; }
+.footer-center { display:flex; flex-wrap:wrap; gap:20px 40px; justify-content:center; align-items:center; }
+.footer-link { color:#2E86C1; text-decoration:none; transition:color 0.3s ease; }
+.footer-link:hover { color:#3498db; }
 </style>
 
 <div class="footer-container">
@@ -731,6 +731,7 @@ st.markdown("""
         <span>Critiplot</span>
         <span>Professional RoB & Certainty of Evidence Visualization Tool</span>
         <a href='https://github.com/aurumz-rgb/Critiplot-main' target='_blank' class='footer-link'>GitHub Repository</a>
+        <a href='https://critiplot.github.io/critiplotR/' target='_blank' class='footer-link'>critiplotR Package</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
