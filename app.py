@@ -89,6 +89,47 @@ st.markdown("""
         margin-bottom: 10px;
         color: #ffffff;
     }
+    .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .app-logo { display: block; margin: 0 auto; padding: 0; }
+    .section-heading {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+        .block-container {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        .stApp { background-attachment: scroll !important; }
+        .top-padding-container { margin-top: 24px; }
+        .app-logo { height: 120px !important; }
+        .centered-title {
+            font-size: 2.4rem !important;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        .centered-subtitle {
+            font-size: 1.05rem !important;
+            margin-bottom: 18px;
+            padding: 0 0.5rem;
+        }
+        .quickstart { font-size: 1.05rem; }
+        .lowered-section { margin-top: 16px; }
+        .section-heading { font-size: 1.25rem; }
+        [data-testid="stMarkdownContainer"] h2 { font-size: 1.6rem; }
+        [data-testid="stMarkdownContainer"] h3 { font-size: 1.3rem; }
+        .plot-container { gap: 14px; }
+        .plot-item { min-width: 100%; max-width: 100%; }
+        .plot-title { font-size: 1.05rem; }
+        .button-row .custom-button { flex: 1 1 auto; text-align: center; }
+        .citation-box { padding: 0.75rem; font-size: 0.95rem; overflow-wrap: anywhere; }
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -113,7 +154,7 @@ def display_logo_png_top_touch(png_file, height=180):
             b64_img = base64.b64encode(f.read()).decode()
         st.markdown(f'''
             <div style="text-align:center; margin-top:0px; padding-top:0px;">
-                <img src="data:image/png;base64,{b64_img}" height="{height}px" style="display:block; margin:0 auto; padding:0;">
+                <img class="app-logo" src="data:image/png;base64,{b64_img}" height="{height}px" style="display:block; margin:0 auto; padding:0;">
             </div>
         ''', unsafe_allow_html=True)
 
@@ -135,7 +176,7 @@ tool = st.selectbox(
 )
 
 
-st.markdown('<div style="font-size: 1.6rem; font-weight: bold; margin-bottom: 10px;"> Quick Start & Data Instructions</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-heading"> Quick Start & Data Instructions</div>', unsafe_allow_html=True)
 with st.expander("**Setting Up Your Data**", expanded=False):  
     st.markdown('<div class="quickstart" style="margin-top:-1rem;">', unsafe_allow_html=True)
     
@@ -182,7 +223,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="nos_data.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -230,7 +271,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="grade_data.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -276,7 +317,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="robis_data.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -327,7 +368,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="case_report.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -380,7 +421,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="case_series.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -424,7 +465,7 @@ To work correctly with **Critiplot**, your uploaded table should follow this str
                     return base64.b64encode(f.read()).decode()
             return ""
         st.markdown(f"""
-        <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div class="button-row">
             <a download="mmat_data.xlsx" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file_to_b64(excel_file_path)}" class="custom-button">
                 Excel Template
             </a>
@@ -567,7 +608,7 @@ if uploaded_file is not None:
                     if download_buttons:
                         st.markdown('<div style="display:flex; gap:10px; margin-bottom:10px; flex-wrap: wrap;">' + ''.join(download_buttons) + '</div>', unsafe_allow_html=True)
         else:
-            download_html = '<div style="display:flex; gap:10px; margin-bottom:10px;">'
+            download_html = '<div class="button-row">'
             for out_ext, path in output_files.items():
                 with open(path, "rb") as f:
                     b64 = base64.b64encode(f.read()).decode()
@@ -663,7 +704,8 @@ elif citation_style == "Vancouver":
     citation_text = vancouver_citation
 
 st.markdown(f'<p style="margin:0; color:#ffff; font-size:1.1rem;"><i>If you use Critiplot to create risk-of-bias or certainty-of-evidence plots for your study, please remember to cite the tool.</i></p>', unsafe_allow_html=True)
-st.markdown(f'<div class="citation-box"><p style="margin:0; color: #000;">{citation_text}</p></div>', unsafe_allow_html=True)
+citation_display = citation_text.replace("https://doi.org/", "https://doi.org/<wbr>")
+st.markdown(f'<div class="citation-box"><p style="margin:0; color: #000;">{citation_display}</p></div>', unsafe_allow_html=True)
 
 copy_button_html = f"""
 <style>
@@ -683,9 +725,26 @@ copy_button_html = f"""
 .custom-button:hover {{
     background-color: #2980b9 !important;
 }}
+.citation-button-row {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}}
+@media (max-width: 600px) {{
+    .citation-button-row {{ gap: 8px; }}
+    .citation-button-row .custom-button {{
+        flex: 1 1 auto;
+        padding: 0.45rem 0.7rem !important;
+        font-size: 0.9rem !important;
+        text-align: center;
+    }}
+}}
 </style>
 
-<div style="display:flex; gap:10px; margin-top:10px; margin-bottom:10px; position:relative;" id="button-container">
+<div class="citation-button-row">
     <a id="copy-btn" class="custom-button">Copy Citation</a>
     <a download="Critiplot_citation.ris" href="data:application/x-research-info-systems;base64,{base64.b64encode(ris_data.encode()).decode()}" class="custom-button">RIS Format</a>
     <a download="Critiplot_citation.bib" href="data:application/x-bibtex;base64,{base64.b64encode(bib_data.encode()).decode()}" class="custom-button">BibTeX Format</a>
@@ -720,6 +779,18 @@ st.markdown("""
 .footer-center { display:flex; flex-wrap:wrap; gap:20px 40px; justify-content:center; align-items:center; }
 .footer-container .footer-link { color:#fff; text-decoration:none; transition:color 0.3s ease; }
 .footer-container .footer-link:hover { color:#90cdf4; text-decoration:underline; }
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+        padding: 0.5rem 0.25rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    .footer-container .footer-left { text-align: center; }
+    .footer-center { flex-direction: column; gap: 8px; }
+    .footer-container .footer-link { padding: 4px 2px; }
+}
 </style>
 
 <div class="footer-container">
