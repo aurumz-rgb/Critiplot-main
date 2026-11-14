@@ -20,6 +20,9 @@ It produces **publication-ready traffic-light plots** and **stacked bar charts**
 * **Reproducibility:** Code and sample datasets archived via **Zenodo DOI**.
 * **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias or certainty-of-evidence judgements**.
 
+> 🆕 **Also available in R:** [**critiplotR**](https://github.com/critiplot/critiplotR) is the official R interface to Critiplot — install it from CRAN with `install.packages("critiplotR")`.
+> Documentation, tutorials & example gallery: **[critiplot.github.io/critiplotR](https://critiplot.github.io/critiplotR/)**
+
 ---
 
 
@@ -41,6 +44,8 @@ Streamlit User-Inferface
 
 📂 **Code & archive (Zenodo DOI):** [10.5281/zenodo.17236600](https://doi.org/10.5281/zenodo.17236600)
 
+🧩 **Use it from R:** [critiplotR](https://github.com/critiplot/critiplotR) · [package website](https://critiplot.github.io/critiplotR/)
+
 ---
 
 ## ✨ Key Features
@@ -50,6 +55,7 @@ Streamlit User-Inferface
 * Supports risk-of-bias frameworks (**NOS, JBI Case Report, JBI Case Series, ROBIS, and MMAT**) and **GRADE for certainty of evidence**.
 * Open-source, fully reproducible, usable via **Python scripts** or **Streamlit web app**.
 * Adjustable **themes, figure sizes, line thickness, and legends**.
+* Available in **R** as the [**critiplotR**](https://github.com/critiplot/critiplotR) package (docs: [critiplot.github.io/critiplotR](https://critiplot.github.io/critiplotR/)).
 
 
 * Please strictly follow the **Data & Template** _(available as .csv & excel format)_ as mentioned in the main Critiplot Web: [https://critiplot.github.io](https://critiplot.github.io)
