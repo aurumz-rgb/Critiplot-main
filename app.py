@@ -642,46 +642,46 @@ st.markdown("---")
 st.markdown("## Citation")
 
 apa_citation = (
-    "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). "
+    "Sahu, V. (2026). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). "
     "Zenodo. https://doi.org/10.5281/zenodo.17236600"
 )
 
 harvard_citation = (
-    "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). "
+    "Sahu, V., 2026. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). "
     "Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600"
 )
 
 mla_citation = (
     "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1).\" "
-    "2025, Zenodo, https://doi.org/10.5281/zenodo.17236600."
+    "2026, Zenodo, https://doi.org/10.5281/zenodo.17236600."
 )
 
 chicago_citation = (
-    "Sahu, Vihaan. 2025. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1).\" "
+    "Sahu, Vihaan. 2026. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1).\" "
     "Zenodo. https://doi.org/10.5281/zenodo.17236600."
 )
 
 ieee_citation = (
     "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1),\" "
-    "Zenodo, 2025. doi: 10.5281/zenodo.17236600."
+    "Zenodo, 2026. doi: 10.5281/zenodo.17236600."
 )
 
 vancouver_citation = (
     "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1). "
-    "Zenodo. 2025. doi:10.5281/zenodo.17236600"
+    "Zenodo. 2026. doi:10.5281/zenodo.17236600"
 )
 
 ris_data = """TY  - JOUR
 AU  - Sahu, V
 TI  - Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1)
-PY  - 2025
+PY  - 2026
 DO  - 10.5281/zenodo.17236600
 ER  -"""
 
-bib_data = """@misc{Sahu2025,
+bib_data = """@misc{Sahu2026,
   author={Sahu, V.},
   title={Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1)},
-  year={2025},
+  year={2026},
   doi={10.5281/zenodo.17236600}
 }"""
 
