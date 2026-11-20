@@ -22,7 +22,7 @@ It produces **publication-ready traffic-light plots** and **stacked bar charts**
 
 ## 📦 Packages
 
-Critiplot is available as a Python package on PyPI and conda-forge, and as an R package on CRAN. All three use the same data templates and expose the same plotting functions: `plot_nos()`, `plot_jbi_case_report()`, `plot_jbi_case_series()`, `plot_grade()`, `plot_robis()`, and `plot_mmat()`.
+Critiplot is available as a Python package on PyPI and conda-forge, and as an R package from GitHub (CRAN submission in review). All three use the same data templates and expose the same plotting functions: `plot_nos()`, `plot_jbi_case_report()`, `plot_jbi_case_series()`, `plot_grade()`, `plot_robis()`, and `plot_mmat()`.
 
 ### Python (PyPI)
 
@@ -46,10 +46,11 @@ conda install conda-forge::critiplot
 
 Use the same Python code shown above. Package page: [anaconda.org/conda-forge/critiplot](https://anaconda.org/conda-forge/critiplot)
 
-### R (CRAN)
+### R (critiplotR)
 
 ```r
-install.packages("critiplotR")
+# install.packages("remotes")
+remotes::install_github("critiplot/critiplotR")
 ```
 
 ```r
@@ -230,7 +231,7 @@ If you use **Critiplot** in your work, please cite:
 
 **APA:**
 
-> Sahu, V. (2025). *Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1)*. (https://doi.org/10.5281/zenodo.17236600)
+> Sahu, V. (2026). *Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.1)*. (https://doi.org/10.5281/zenodo.17236600)
 
 **Other formats:**
 

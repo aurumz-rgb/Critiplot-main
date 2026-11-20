@@ -3,7 +3,7 @@ message: "If you use this software, please cite it using the following metadata.
 title: "Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses"
 version: "v2.1.1"
 doi: "https://doi.org/10.5281/zenodo.17236600"
-date-released: 2025-09-06
+date-released: 2026-04-23
 authors:
   - family-names: "Sahu"
     given-names: "Vihaan"
@@ -15,5 +15,5 @@ preferred-citation:
   title: "Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses"
   version: "v2.1.1"
   doi: "https://doi.org/10.5281/zenodo.17236600"
-  year: 2025
+  year: 2026
   url: "https://doi.org/10.5281/zenodo.17236600"
