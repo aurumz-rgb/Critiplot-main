@@ -20,8 +20,45 @@ It produces **publication-ready traffic-light plots** and **stacked bar charts**
 * **Reproducibility:** Code and sample datasets archived via **Zenodo DOI**.
 * **Scope:** Critiplot is a **visualisation tool only**; it does **not compute risk-of-bias or certainty-of-evidence judgements**.
 
-> 🆕 **Also available in R:** [**critiplotR**](https://github.com/critiplot/critiplotR) is the official R interface to Critiplot — install it from CRAN with `install.packages("critiplotR")`.
-> Documentation, tutorials & example gallery: **[critiplot.github.io/critiplotR](https://critiplot.github.io/critiplotR/)**
+## 📦 Packages
+
+Critiplot is available as a Python package on PyPI and conda-forge, and as an R package on CRAN. All three use the same data templates and expose the same plotting functions: `plot_nos()`, `plot_jbi_case_report()`, `plot_jbi_case_series()`, `plot_grade()`, `plot_robis()`, and `plot_mmat()`.
+
+### Python (PyPI)
+
+```bash
+pip install critiplot
+```
+
+```python
+from critiplot import plot_nos
+
+plot_nos("nos_data.csv", "nos_plot.png", theme="blue")
+```
+
+Package page: [pypi.org/project/critiplot](https://pypi.org/project/critiplot/)
+
+### conda-forge
+
+```bash
+conda install conda-forge::critiplot
+```
+
+Use the same Python code shown above. Package page: [anaconda.org/conda-forge/critiplot](https://anaconda.org/conda-forge/critiplot)
+
+### R (CRAN)
+
+```r
+install.packages("critiplotR")
+```
+
+```r
+library(critiplotR)
+
+plot_nos("nos_data.csv", "nos_plot.png", theme = "blue")
+```
+
+`critiplotR` is the official R interface and calls the Python package through reticulate. See the [critiplotR documentation](https://critiplot.github.io/critiplotR/) for setup and examples.
 
 ---
 
@@ -44,8 +81,6 @@ Streamlit User-Inferface
 
 📂 **Code & archive (Zenodo DOI):** [10.5281/zenodo.17236600](https://doi.org/10.5281/zenodo.17236600)
 
-🧩 **Use it from R:** [critiplotR](https://github.com/critiplot/critiplotR) · [package website](https://critiplot.github.io/critiplotR/)
-
 ---
 
 ## ✨ Key Features
@@ -53,9 +88,9 @@ Streamlit User-Inferface
 * Converts risk-of-bias and certainty-of-evidence ratings into **traffic-light plots**.
 * Generates **publication-quality figures** in multiple formats: `.png`, `.pdf`, `.svg`, `.eps`.
 * Supports risk-of-bias frameworks (**NOS, JBI Case Report, JBI Case Series, ROBIS, and MMAT**) and **GRADE for certainty of evidence**.
-* Open-source, fully reproducible, usable via **Python scripts** or **Streamlit web app**.
+* Open-source, fully reproducible, usable via **Python**, **R**, or the **Streamlit web app**.
 * Adjustable **themes, figure sizes, line thickness, and legends**.
-* Available in **R** as the [**critiplotR**](https://github.com/critiplot/critiplotR) package (docs: [critiplot.github.io/critiplotR](https://critiplot.github.io/critiplotR/)).
+* Available as **Python** ([PyPI](https://pypi.org/project/critiplot/) and [conda-forge](https://anaconda.org/conda-forge/critiplot)) and **R** ([critiplotR](https://github.com/critiplot/critiplotR)) packages.
 
 
 * Please strictly follow the **Data & Template** _(available as .csv & excel format)_ as mentioned in the main Critiplot Web: [https://critiplot.github.io](https://critiplot.github.io)
@@ -67,9 +102,9 @@ Streamlit User-Inferface
 
 ### NOS
 
-* **Selection domain (0–4 stars):** 3–4 → Low, 2 → Moderate, 0–1 → High
-* **Comparability domain (0–2 stars):** 2 → Low, 1 → Moderate, 0 → High
-* **Outcome/Exposure domain (0–3 stars):** 3 → Low, 2 → Moderate, 0–1 → High
+* **Selection domain (0-4 stars):** 3-4 → Low, 2 → Moderate, 0-1 → High
+* **Comparability domain (0-2 stars):** 2 → Low, 1 → Moderate, 0 → High
+* **Outcome/Exposure domain (0-3 stars):** 3 → Low, 2 → Moderate, 0-1 → High
 
 ### JBI
 
@@ -86,7 +121,9 @@ Streamlit User-Inferface
 ---
 
 
-## 📥 Installation [For those, who wanna host Offline]
+## 🖥️ Run the web app locally
+
+The package install commands in the Packages section are enough for Python or R use. To host the web app yourself:
 
 ```bash
 git clone https://github.com/aurumz-rgb/Critiplot-main.git
@@ -98,7 +135,9 @@ pip install -r requirements.txt
 
 ## ⚡ Usage
 
-### 1️⃣ Python Scripts
+### 1️⃣ Command-line scripts (repository checkout)
+
+These scripts are included in this repository. If you installed the Python package, use the package functions shown above instead.
 
 Separate scripts are available for each assessment tool:
 
